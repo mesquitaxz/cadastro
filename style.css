@@ -1,0 +1,227 @@
+@charset "UTF-8";
+
+* {
+    família de fontes: Verdana, Geneva, Tahoma, sans-serif;
+    dimensionamento de caixa: caixa de borda;
+}
+
+/* ELEMENTOS DA INTERFACE */
+
+corpo {
+    cor de fundo: #15142b;
+    imagem de fundo: gradiente linear (180 graus, #372991, #15142b);
+    repetição em segundo plano: sem repetição;
+    posição de fundo: centro centro;
+    tamanho do fundo: capa;
+    anexo de fundo: fixo;
+
+    exibição: flexível;
+    direção flexível: coluna;
+    flex-wrap: agorarap;
+    justificar-conteúdo: centro;
+    alinhar itens: centro;
+}
+
+cabeçalho, principal, seção, artigo {
+    largura máxima: 700px;
+}
+
+cabeçalho> h1 {
+    cor branca;
+    sombra de texto: 3px 3px 0px preto;
+}
+
+principal, seção, artigo {
+    cor de fundo: branco;
+    preenchimento: 15px;
+    margem inferior: 20px;
+    raio da borda: 10px;
+    sombra da caixa: 0px 0px 20px rgba(0, 0, 0, 0,502);
+}
+
+rodapé {
+    exibição: bloco;
+    largura: 100vw;
+    cor de fundo: #291f6c;
+    cor branca;
+    alinhamento de texto: centro;
+    margem superior: automático;
+    preenchimento: 5px;
+}
+
+p {
+    alinhamento de texto: justificar;
+    altura da linha: 1,5em;
+}
+
+h2, h3, h4 {
+    cor: #372991;
+    margem: 0 0 10px 0;
+}
+
+a {
+    cor: #15142b;
+    cor de fundo: rgba (55, 41, 145, 0,1);
+    preenchimento: 0 3px;
+    peso da fonte: 600;
+    decoração de texto: nenhuma;
+    borda inferior: 0,5px pontilhado #372991;
+}
+
+a: passar o mouse {
+    cor: #372991;
+    borda inferior: 1px sólido #372991;
+}
+
+/* TABELAS E LISTAS */
+
+mesa {
+    largura mínima: 400px;
+    espaçamento de borda: 0px;
+    borda: 0,5px sólido #372991;
+    margem: 10px automático;
+}
+
+mesa {
+    cor de fundo: #372991;
+    cor branca;
+    preenchimento: 5px;
+    alinhamento de texto: esquerda;
+}
+
+tabela td {
+    preenchimento: 5px;
+}
+
+tabela tr {
+    cor de fundo: rgba (55, 41, 145, 0,05);
+}
+
+tabela tr:nésimo-filho(ímpar) {
+    cor de fundo: rgba (55, 41, 145, 0,3);
+}
+
+tabela.divisao {
+    borda: 1px branco sólido;
+}
+
+tabela.divisao td {
+    cor de fundo: branco;
+    preenchimento: 20px;
+    alinhamento de texto: centro;
+    tamanho da fonte: 2,5em;
+}
+
+tabela.divisao tr:nth-child(1) td:nth-child(2) {
+    borda inferior: 3px preto sólido;
+    borda esquerda: 3px preto sólido;
+}
+
+tabela.divisao tr:nth-child(2) td:nth-child(2) {
+    borda esquerda: 3px preto sólido;
+}
+
+tabela.divisao tr:nth-child(2) td:nth-child(1) {
+    decoração de texto: sublinhado;
+}
+
+ul > li::marcador {
+    cor: #372991;
+}
+
+/* ELEMENTOS DE FORMULÁRIO */
+
+forma {
+    cor de fundo: rgba (55, 41, 145, 0,2);
+    preenchimento: 15px;
+    raio da borda: 10px;
+}
+
+rótulo do formulário {
+    exibição: bloco;
+    largura: conteúdo adequado;
+    tamanho da fonte: 0,8em;
+    peso da fonte: 100;
+    cor de fundo: rgba (55, 41, 145, 0,2);
+    preenchimento: 3px 7px;
+    margem superior: 10px;
+    margem inferior: 0px;
+    raio da borda: 5px;
+}
+
+entrada[tipo=texto], [tipo=número], selecione, entrada[tipo=data], entrada[tipo=data], entrada[tipo=datahora], entrada[tipo=e-mail], entrada[tipo=mês], input[type=senha], input[type=range], input[type=tel], input[type=time], input[type=week] {
+    largura: 100%;
+    preenchimento: 12px 20px;
+    tamanho da fonte: 1em;
+    margem: 8px 0;
+    display: bloco embutido;
+    borda: 1px sólido #ccc;
+    raio da borda: 4px;
+    dimensionamento de caixa: caixa de borda;
+}
+  
+input[tipo=enviar] {
+    largura: 100%;
+    cor de fundo: #4CAF50;
+    tamanho da fonte: 1em;
+    cor branca;
+    preenchimento: 10px 20px;
+    margem: 5px 0;
+    fronteira: nenhuma;
+    raio da borda: 4px;
+    cursor: ponteiro;
+}
+  
+input[type=enviar]:hover {
+    cor de fundo: #45a049;
+}
+
+entrada[tipo=redefinir] {
+    largura: 100%;
+    cor de fundo: #eb9903;
+    tamanho da fonte: 1em;
+    cor branca;
+    preenchimento: 10px 20px;
+    margem: 5px 0;
+    fronteira: nenhuma;
+    raio da borda: 4px;
+    cursor: ponteiro;
+}
+
+input[type=reset]:hover {
+    cor de fundo: #c27013;
+}
+
+input[tipo=botão], botão {
+    largura: 100%;
+    cor de fundo: #372991;
+    tamanho da fonte: 1em;
+    cor branca;
+    preenchimento: 10px 20px;
+    margem: 5px 0;
+    fronteira: nenhuma;
+    raio da borda: 4px;
+    cursor: ponteiro;
+}
+
+input[tipo=botão]:hover, botão:hover {
+    cor de fundo: #291f6c;
+}
+
+conjunto de campos {
+    borda: 0,5px pontilhada #372991;
+}
+
+conjunto de campos > legenda {
+    tamanho da fonte: 0,8em;
+    peso da fonte: 100;
+    cor de fundo: rgba (55, 41, 145, 0,2);
+    preenchimento: 3px 7px;
+    raio da borda: 5px;
+}
+
+input[type=radio] + rótulo, input[type=checkbox] + rótulo {
+    display: bloco embutido;
+    tamanho da fonte: 1em;
+    cor de fundo: rgba(0, 0, 0, 0);
+}
